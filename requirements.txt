@@ -1,0 +1,44 @@
+# This file is copied from reichlab/cladetime and modified to contain a known
+# set of dependencies that Dependabot has trouble with (because it suggests individual
+# package updates that conflict with one another when applied holisitcally
+alabaster==0.7.16
+    # via sphinx
+awscli==1.38.31
+    # via cladetime (pyproject.toml)
+boto3==1.37.31
+    # via cladetime (pyproject.toml)
+botocore==1.37.31
+    # via
+    #   awscli
+    #   boto3
+    #   s3transfer
+docutils==0.16
+    # via
+    #   awscli
+    #   myst-parser
+    #   sphinx
+    #   sphinx-tabs
+    #   sphinx-toolbox
+furo==2023.3.27
+    # via cladetime (pyproject.toml)
+myst-parser==1.0.0
+    # via cladetime (pyproject.toml)
+sphinx==5.3.0
+    # via
+    #   cladetime (pyproject.toml)
+    #   autodocsumm
+    #   furo
+    #   myst-parser
+    #   sphinx-autobuild
+    #   sphinx-autodoc-typehints
+    #   sphinx-basic-ng
+    #   sphinx-copybutton
+    #   sphinx-github-style
+    #   sphinx-prompt
+    #   sphinx-tabs
+    #   sphinx-toolbox
+    #   sphinxext-opengraph
+sphinx-autobuild==2024.10.3
+    # via cladetime (pyproject.toml)
+sphinx-autodoc-typehints==1.23.0
+    # via sphinx-toolbox
