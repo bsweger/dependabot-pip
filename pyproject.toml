@@ -7,10 +7,8 @@ readme = "README.md"
 
 dependencies = [
     "awscli>=1.32.92",
-    "furo",
     "myst-parser",
     "sphinx",
-    "sphinx-autobuild",
 ]
 
 [build-system]
