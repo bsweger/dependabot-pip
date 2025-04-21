@@ -1,0 +1,29 @@
+[project]
+name = "dependabot-pip"
+dynamic = ["version"]
+license = "MIT"
+requires-python = ">=3.11"
+readme = "README.md"
+
+dependencies = [
+    "awscli>=1.32.92",
+    "furo",
+    "myst-parser",
+    "sphinx",
+    "sphinx-autobuild",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tool.ruff]
+line-length = 120
+lint.extend-select = ["I"]
